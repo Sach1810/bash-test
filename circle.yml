@@ -1,6 +1,5 @@
-notify:
   test:
-    override:
+      - pwd
       - ./test.sh
 
   webhooks:

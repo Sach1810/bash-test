@@ -1,6 +1,6 @@
   test:
-      - pwd
-      - ./test.sh
+    - pwd
+    - ./test.sh
 
   webhooks:
     # A list of hook hashes, containing the URL field

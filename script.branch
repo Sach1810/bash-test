@@ -21,7 +21,7 @@
 # fi
 if git ls-remote --exit-code . origin/Zacha
 then
-    echo "Exist"
+    echo "Exist"    
 else
     echo "Doesn't exist"  
 fi

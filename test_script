@@ -1,0 +1,15 @@
+#!/bin/bash
+directory="/Users/Sach1810/Desktop/bash-test/test"
+
+for i in $(find $directory -type f -name "*.php" -not -path "*app/views*" -not -path "*vendor*" -not -path "*public/packages*")
+    do
+
+        fileNameWithExt=${i##*/}
+        fileName=${fileNameWithExt%.*}
+        className="Class $fileName"
+      if ! grep -q $fileName $i;
+        then
+          echo "Class does not match file name in $i"
+      fi
+
+done

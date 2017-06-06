@@ -1,11 +1,14 @@
 #!/bin/bash
+# RESULT="sacha"
+# echo "RESULT"
+
 
 # [ -f test ] && echo "File exist" || echo "File does not exist"
 
 # cd circleci-artifacts
 #if [ -e  circleci-artifacts/integrityExitCode.php ]
-if [ -e  test/test.php ]
-then
+# if [git branch -r]
+# then
     # cp -a /circleci-artifacts/lib/. /tmp/glasseson-server/lib/
     # cd /tmp/glasseson-server
     #
@@ -14,11 +17,39 @@ then
     # git add .
     # git commit -m"CircleCI copy lib files"
     # git push origin $1
+# echo "TRUE"
+# echo $?
+#
+#     echo "files have been copied"
+# else
+#
+# echo "false"
+# echo $?
+# fi
 
-echo $?
 
-    echo "files have been copied"
-else
-    true; echo $?
-   echo "Sorry Integrity failed" >&2
-fi
+# git branch -r | grep brown
+# echo $?
+# if [ $? = 0 ]
+#     then
+#         echo "yes"
+#         git checkout -b Sacha
+#         git push origin Sacha
+#     else
+#         echo "no"
+# fi
+
+if [git ls-remote origin Sacha]
+    then
+        echo "yes"
+    else
+        echo "no"
+    fi
+
+
+# if [ git branch | grep Sacha ]
+# then
+#     echo "Branch named  already exists"
+# else
+#     echo "Branch named  does not exist"
+# fi

@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# cd test
+#   ls -1
+#    date +"%H-%M"
+
+# ls -l --time-style=full-iso $1 | grep -o "[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9] [0-9][0-9]:[0-9][0-9]:[0-9][0-9]"
+#
+# sleep 5
+
+# while inotifywait -r -e close_write "/test"
+# do
+#     echo "close_write"
+# done
+
+
+fswatch -o ~/test/ | xargs -n1 ~/0

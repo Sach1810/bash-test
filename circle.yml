@@ -1,8 +1,8 @@
 notify:
   test:
     override:
-      - phpunit test/unit-tests
-      
+      - ./test.sh
+
   webhooks:
     # A list of hook hashes, containing the URL field
     - url: https://6over6.ngrok.io
